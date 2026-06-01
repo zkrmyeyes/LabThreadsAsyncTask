@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background">
+
+    <!-- ===== TITRE ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 1 — Threads Android"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ===== STATUT ===== -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏳ Statut : prêt"
+        android:textSize="15sp"
+        android:textColor="@color/text_primary"
+        android:paddingBottom="12dp"
+        android:minHeight="48dp"/>
+
+    <!-- ===== PROGRESS BAR avec label ===== -->
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progression : 0%"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/primary"
+        android:visibility="invisible"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ===== IMAGE VIEW ===== -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Image chargée"
+        android:background="@color/image_bg"
+        android:padding="8dp"/>
+
+    <!-- ===== SECTION : THREAD ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔵 Thread de fond"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@+id/btnLoadThread"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="📷 Charger image (Thread)"
+        android:backgroundTint="@color/btn_thread"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ===== SECTION : ASYNCTASK ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🟢 AsyncTask"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@+id/btnCalcAsync"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="⚙️ Calcul lourd (AsyncTask)"
+        android:backgroundTint="@color/btn_async"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ===== SECTION : TEST UI THREAD ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🟡 Test réactivité UI"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="💬 Afficher Toast (UI Thread)"
+        android:backgroundTint="@color/btn_toast"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
