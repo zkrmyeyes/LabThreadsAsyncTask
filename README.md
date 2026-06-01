@@ -161,6 +161,6 @@ Only the original thread that created a view hierarchy can touch its views.
 
 ## 👤 Auteur
 
-- **Nom** : _à compléter_  
+- **Nom** : _zakaria aouinati_  
 - **Module** : Programmation Mobile Android  
 - **Lab** : 1 — Threads & AsyncTask
