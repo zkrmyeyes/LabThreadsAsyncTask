@@ -9,7 +9,7 @@
 
 | Page principale | Chargement image | Afficher Toast |
 |:---:|:---:|:---:|
-| ![Page principale](screenshots/page_principale.png) | ![Charger image](screenshots/charger_image.png) | ![Afficher toast](screenshots/affiche_toast.png) |
+| ![Page principale](page_principale.png) | ![Charger image](charger_image.png) | ![Afficher toast](affiche_toast.png) |
 | Écran d'accueil avec les 3 boutons | Thread de fond — image chargée | Toast affiché sans bloquer l'UI |
 
 ---
